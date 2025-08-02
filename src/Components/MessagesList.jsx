@@ -3,7 +3,7 @@ import Message from "./Message/Message";
 
 const MessagesList = ({messages, deleteMessageById}) => {
   if(messages.length === 0) {
-    return <span>No hay mensajes</span>
+    return <span>Hoy</span>
   }
   
   const lista_mensajes = messages.map((message) =>(
