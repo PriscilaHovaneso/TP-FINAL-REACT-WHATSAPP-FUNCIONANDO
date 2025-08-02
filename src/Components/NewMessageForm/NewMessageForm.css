@@ -1,0 +1,54 @@
+.new-message-form {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f0f0f0; 
+  padding: 10px 15px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 10;
+}
+
+.input-container {
+  flex-grow: 1;
+  position: relative;
+}
+
+.input-container input[type='text'] {
+  width: 100%;
+  padding: 10px 45px 10px 15px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.input-container input[type='text']::placeholder {
+  color: #888;
+  width: 100%;
+  max-width: 600px; 
+  padding: 8px 35px 9px 17px; 
+  border-radius: 35px;
+  border: none;
+  outline: none;
+  font-size: 16px; 
+  background-color: white;
+  box-shadow: none;
+}
+
+
+.input-container::after {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #29685f; 
+  cursor: pointer;
+  pointer-events: none; 
+}
+
