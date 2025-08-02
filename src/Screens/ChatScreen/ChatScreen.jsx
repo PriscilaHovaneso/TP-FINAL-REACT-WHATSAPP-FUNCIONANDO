@@ -31,15 +31,15 @@ const [messages, setMessages] = useState(contact_selected.messages)
             }
 
 
-            console.log("Mensajes actuales:", messages);
+            
         
 return (
     <div>
-        <h1>Mensajes</h1>
+        
         {
             messages.length > 0
             &&
-            <button  onClick={() => deleteMessageById(messages[0].id)}>Eliminar primer mensaje</button> 
+             <button  onClick={() => deleteMessageById(messages[0].id)}>Eliminar primer mensaje</button>
         }
         <MessagesList messages={messages} deleteMessageById={deleteMessageById}/>
         <NewMessageForm addNewMessage={addNewMessage}/>

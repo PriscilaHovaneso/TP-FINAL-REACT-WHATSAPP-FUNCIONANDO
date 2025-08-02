@@ -1,13 +1,16 @@
-.message-container{
-    display:flex;
+.message-container {
+    display: flex;
+    margin: 4px 8px;
+    max-width: 100%;
     flex-direction: column;
+
 }
 
-.message-container.my-message{
-    justify-content: flex-end;
+.message-container.my-message {
+    justify-content: flex-start
 }
 
-.message{
+.message {
     max-width: 60%;
     padding: 8px 12px;
     margin: 6px;
@@ -35,12 +38,64 @@
 }
 
 .message-time {
-    font-size: 11px;
+    font-size: 10px;
     color: gray;
     margin-top: 4px;
-    display: flex;
+    display:inline;
     text-align: right;
+    bottom: 4px;
+    right: 8px;
+    position: absolute;
+    
 }
+
+.message.text {
+    margin: 0;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.sent {
+    justify-content: flex-end;
+}
+
+.received {
+    justify-content: flex-start;
+}
+
+.message-bubble {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    position: relative ;
+    max-width: 260px;
+    word-wrap: break-word;
+    min-width: 60px;
+}
+
+.sent.message-bubble {
+    background-color: green;
+    border: none;
+}
+
+.selected .message-bubble {
+    border: 2px solid #4caf50;
+
+}
+
+.delete-button {
+    margin-top: 4px;
+    background-color: transparent;
+    color: #ff4444;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+
 
 
 
