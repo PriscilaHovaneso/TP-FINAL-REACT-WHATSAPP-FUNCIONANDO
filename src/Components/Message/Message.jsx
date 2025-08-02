@@ -19,8 +19,10 @@ const Message = ({ emisor, hora, id, texto, status, deleteMessageById }) => {
      >
 
       <div className="message-bubble">
+        <div className="message-content">
          <p className="message-text">{texto}</p>
          <span className="message-time">{hora}</span>
+         </div>
          {message_selected && (
          <button
           className="delete-button" onClick={() => deleteMessageById(id)}>Eliminar</button>
