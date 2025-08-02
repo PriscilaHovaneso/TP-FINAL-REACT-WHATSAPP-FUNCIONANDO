@@ -10,11 +10,11 @@ const Message = ({ emisor, hora, id, texto, status, deleteMessageById }) => {
     setMessageSelected(true);
   };
 
-  const isSender = emisor === "YO";
+  const isSender = emisor === 'YO';
 
   return (
     <div
-      className={`message-container $ {isSender ? "sent" : "received"} $ {message_selected ? "selected" : ""}`}
+      className={`message-container ${isSender?'sent':'received'} ${message_selected ?'selected':''}`}
       onContextMenu={handleChangeMessageSelected}
      >
 

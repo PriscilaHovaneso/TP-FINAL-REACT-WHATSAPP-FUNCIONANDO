@@ -1,6 +1,6 @@
 .message-container {
     display: flex;
-    margin: 4px 8px;
+    margin: 4px 40px;
     max-width: 100%;
     flex-direction: column;
 
@@ -76,13 +76,15 @@
     min-width: 60px;
 }
 
-.sent.message-bubble {
+.sent-bubble {
     background-color: green;
     border: none;
 }
 
 .selected .message-bubble {
-    border: 2px solid #4caf50;
+    background-color: #dcf8c6;
+    border: none;
+    align-self: flex-end;
 
 }
 
@@ -93,6 +95,14 @@
     border: none;
     cursor: pointer;
     font-size: 12px;
+}
+
+.sent {
+    align-items: flex-end;
+}
+
+.received {
+    align-items: flex-start;
 }
 
 
