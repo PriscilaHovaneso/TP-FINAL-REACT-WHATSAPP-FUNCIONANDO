@@ -1,92 +1,64 @@
 .message-container {
     display: flex;
-    margin: 4px 40px;
+    margin: 4px 16px;
     max-width: 100%;
     flex-direction: column;
-
 }
 
-.message-container.my-message {
-    justify-content: flex-start
+
+.message-container.sent {
+    align-items: flex-end;
 }
 
-.message {
-    max-width: 60%;
-    padding: 8px 12px;
-    margin: 6px;
-    border-radius: 12px;
-    font-size: 15px;
-    line-height: 1.4;
-    position: relative;
-    word-wrap: break-word;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    width: 200px;
+
+.message-container.received {
+    align-items: flex-start;
 }
 
-.message.yo {
-    background-color: #dcf8c6;
-    align-self: flex-end;
-    margin-left: auto;
-    text-align: right;
-}
-
-.message.otro {
-    background-color: #fff;
-    align-self: flex-start;
-    margin-right: auto;
-    text-align: left;
-}
-
-.message-time {
-    font-size: 10px;
-    color: gray;
-    margin-top: 4px;
-    display:inline;
-    text-align: right;
-    bottom: 4px;
-    right: 8px;
-    position: absolute;
-    
-}
-
-.message.text {
-    margin: 0;
-    text-align: left;
-    margin-top: 20px;
-    font-size: 14px;
-}
-
-.sent {
-    justify-content: flex-end;
-}
-
-.received {
-    justify-content: flex-start;
-}
 
 .message-bubble {
     background-color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 12px;
     padding: 8px 12px;
-    box-sizing: border-box;
-    position: relative ;
+    position: relative;
     max-width: 260px;
-    word-wrap: break-word;
     min-width: 60px;
+    word-wrap: break-word;
+    box-sizing: border-box;
 }
 
+
+.sent .message-bubble,
 .sent-bubble {
-    background-color: green;
-    border: none;
-}
-
-.selected .message-bubble {
     background-color: #dcf8c6;
     border: none;
     align-self: flex-end;
-
+    text-align: right;
 }
+
+
+.received .message-bubble {
+    background-color: #ffffff;
+    text-align: left;
+}
+
+
+.message {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+
+.message-time {
+    font-size: 10px;
+    color: gray;
+    position: absolute;
+    bottom: 4px;
+    right: 8px;
+}
+
 
 .delete-button {
     margin-top: 4px;
@@ -97,14 +69,11 @@
     font-size: 12px;
 }
 
-.sent {
-    align-items: flex-end;
-}
 
-.received {
-    align-items: flex-start;
+.selected .message-bubble {
+    background-color: #dcf8c6;
+    border: none;
 }
-
 
 
 
