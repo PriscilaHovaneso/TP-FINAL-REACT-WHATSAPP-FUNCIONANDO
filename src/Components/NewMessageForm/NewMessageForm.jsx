@@ -24,7 +24,7 @@ const NewMessageForm = ({addNewMessage}) => {
             <div className="input-container">
                <input 
                 type= 'text' 
-                placeholder='Escribe un mensaje' 
+                placeholder='Escribe un mensaje'
                 id='message' 
                 name='message' 
                 required />
