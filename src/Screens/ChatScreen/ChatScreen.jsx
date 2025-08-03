@@ -3,7 +3,7 @@ import {MessagesList} from '../../Components/MessagesList'
 import NewMessageForm from '../../Components/NewMessageForm/NewMessageForm'
 import { useParams } from 'react-router'
 import {getContactById} from '../../services/contactService';
-
+import './ChatScreen.css'
 
 const ChatScreen = () => {
 
