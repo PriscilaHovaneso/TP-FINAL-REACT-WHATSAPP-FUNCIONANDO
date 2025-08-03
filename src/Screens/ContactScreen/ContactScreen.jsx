@@ -12,7 +12,7 @@ const staticContacts =[
         name: 'Harry',
         description: 'jugando quidditch',
         avatar: 'https://static.wikia.nocookie.net/esharrypotter/images/8/8d/PromoHP7_Harry_Potter.jpg',
-        lastConnection: '17:36',
+        lastConnection: 'Ayer',
         connectionStatus: 'offline'
     },
 
@@ -46,6 +46,7 @@ const ContactScreen = () => {
             </div>
             <div className="contact-icons"><MessageSquareMore className="icon"/>
             </div>
+            
             <div className="contact-list"></div>
             </div>
        
