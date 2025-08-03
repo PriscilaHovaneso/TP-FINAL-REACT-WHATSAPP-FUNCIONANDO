@@ -7,6 +7,12 @@ Incluye:
 -Envío y eliminación de mensajes
 -Navegación entre contactos
 -Filtracion de contactos por buscador de lista de contactos y desde ahi dirigirnos al chat del contacto encontrado
+-Funcionamiento:
+Desde la pantalla de lista de contactos se puede ingresar a cada contacto y ver su chat. Tambien se puede firltrar o buscar un contacto para que encuentre su conversación. Al ingresar a cada chat se puede ver una conversación con mensajes predeterminados  y a su vez enviar nuevos mensajes.
+
+Tanto los mensajes existentes como los que envio, se pueden borrar dando clik derecho sobre el mensaje y clickeando en la palabra Eliminar.
+Al actualizar la pantalla, vuelve la conversación.
+En el margen superior de cada conversación hay un boton de Eliminar primer mensaje funcional. Se van eliminando toddos los mensajes hasta que ya no quedan mensajes y luego aparece la palabra Hoy y el chat vacío.
 
 ## Tecnologias utilizadas
 -React
