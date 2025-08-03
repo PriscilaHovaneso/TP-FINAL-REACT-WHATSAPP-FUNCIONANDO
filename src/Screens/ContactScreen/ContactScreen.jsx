@@ -32,23 +32,37 @@ const staticContacts =[
 const ContactScreen = () => {
     const contacts =  getContactList()
 
-  const [contactsState, setContactsState] = useState(staticContacts);
+    const [contactsState, setContactsState] = useState(staticContacts);
+
+    const [searchTerm, setSearchTerm] = useState('');
+
+    const handleSearchChange = (e) => {
+    const term = e.target.value;
+    setSearchTerm(term);
+
+    const filteredContacts = staticContacts.filter(contact =>
+        contact.name.toLowerCase().includes(term.toLowerCase())
+    );
+
+    setContactsState(filteredContacts);
+};
     
   return (
         <div className="contact-screen">
-        <div className="contact-list-container">   
-        <div className="contact-header">
+           <div className="contact-list-container">   
+           <div className="contact-header">
 
-           <div className="top-bar"> 
-              <h2 className="contact-title">WhatsApp</h2><MessageSquareMore className="icon"/>
-           </div>
+              <div className="top-bar"> 
+                 <h2 className="contact-title">WhatsApp</h2><MessageSquareMore className="icon"/>
+              </div>
             
-            <div className ="search-bar">
-                <span className="search-icon"><FaSearch/></span>
-                <input type="text" placeholder="Buscar un chat o iniciar uno nuevo" className="search-input"/>
-            </div>
-            <div className="contact-icons">
-            </div>
+              <div className ="search-bar">
+                  <span className="search-icon"><FaSearch/></span>
+                  <input type="text" placeholder="Buscar un chat o iniciar uno nuevo" className="search-input" 
+                  value={searchTerm}onChange={handleSearchChange}/>
+              </div>
+                <div className="contact-icons">
+               </div>
             
             <div className="contact-list"></div>
             </div>
