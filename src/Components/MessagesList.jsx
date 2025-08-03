@@ -1,6 +1,7 @@
 import React from "react";
 import Message from "./Message/Message";
 
+
 const MessagesList = ({messages, deleteMessageById}) => {
   if(messages.length === 0) {
     return <span>Hoy</span>
@@ -22,9 +23,10 @@ const MessagesList = ({messages, deleteMessageById}) => {
   
   return (
     <div>
-      
+    
       {lista_mensajes}
-    </div>
+      </div>
+    
   )
 
 }
