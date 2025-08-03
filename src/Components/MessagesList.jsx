@@ -1,10 +1,16 @@
 import React from "react";
 import Message from "./Message/Message";
+import './MessageList.css'
 
 
 const MessagesList = ({messages, deleteMessageById}) => {
   if(messages.length === 0) {
-    return <span>Hoy</span>
+    return (
+      <div className="chat-date-lebel-container">
+          <span className="chat-date-label">Hoy</span>
+      </div>
+          
+        )
   }
   
   const lista_mensajes = messages.map((message) =>(
