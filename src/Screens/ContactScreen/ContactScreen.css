@@ -29,6 +29,13 @@
     align-items: self-start;
 }
 
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
 .contact-title {
     font-size:  24px;
     font-weight: bold;
@@ -41,6 +48,14 @@
     font-size: 1rem;
     color: #0f0e0e;
     font-weight: 500;
+}
+
+.icon {
+    font-size: 20px;
+    color: #0d0d0d;
+    cursor: pointer;
+    margin-left: 150px
+
 }
 
 .contact-icons.icon {
