@@ -9,6 +9,7 @@
   width: 100%;
   box-sizing: border-box;
   flex-direction: row;
+  text-decoration: none;
 }
 
 .contact-item:hover {
@@ -23,6 +24,8 @@
   margin-right: 0.75rem;
   flex-shrink: 0;
 }
+
+
 
 .contact-name {
   font-weight: bold;
@@ -43,9 +46,9 @@
 
 
 
-.last-connection {
+.contact-lastConnection {
   font-size: 13px;
-  color: #777;
+  color: #7b7878;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
