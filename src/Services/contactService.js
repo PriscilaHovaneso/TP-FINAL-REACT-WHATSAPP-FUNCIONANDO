@@ -9,28 +9,28 @@ const contacts =[
         messages: [
             {
     emisor: 'YO',
-    hora: '23.10',
+    hora: '23:10',
     id: 1,
     texto: 'Hola',
     status:'visto'
     },
      {
     emisor: 'otro',
-    hora: '23.10',
+    hora: '23:10',
     id: 2,
     texto: 'Hola, como estas?',
     status:'visto'
     },
      {
     emisor: 'YO',
-    hora: '23.10',
+    hora: '23:10',
     id: 3,
     texto: 'Todo bien',
     status:'visto'
     },
      {
     emisor: 'YO',
-    hora: '23.10',
+    hora: '23:10',
     id: 4,
     texto: 'Me alegro',
     status:'visto'
